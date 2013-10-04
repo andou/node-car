@@ -5,14 +5,13 @@
 
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
 
 var app = express();
 
 // all environments
-app.set('port', process.env.PORT || 8080);
+app.set('port', process.env.PORT || 80);
 app.set('views', __dirname + '/views');
 app.set('view engine', 'jade');
 app.use(express.favicon());
@@ -28,9 +27,6 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', routes.index);
-app.get('/pippo', routes.pippo);
-app.get('/pippo/pluto', routes.pippo);
-
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Ready to rock!! Listening on port ' + app.get('port'));
