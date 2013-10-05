@@ -12,11 +12,15 @@ exports.carmodels = function(req, res){
 /*step 1*/
 exports.carmodel = function(req, res){
 	var is_mobile = identify(req);
+	var car_model_id = 1;
+	if (req.query.model!==undefined) {
+		car_model_id = req.query.model;
+	}
 
 	//running total
 	var rtotal = 0;
 
-	res.render('model', { title: 'Car Configurator', all_models: models.model, running_total: rtotal});
+	res.render('model', { title: 'Car Configurator', all_models: models.model, running_total: rtotal, model_id: car_model_id });
 
 };
 
@@ -25,6 +29,8 @@ exports.carpackage = function(req, res){
 	var is_mobile = identify(req);
 	//default car model id
 	var car_model_id = 1;
+	//
+	var car_package_id = 1;
 	//car model object
 	var car_model = null;
 	//running total
@@ -34,6 +40,10 @@ exports.carpackage = function(req, res){
 		car_model_id = req.query.model;
 	}
 
+	if (req.query.package!==undefined) {
+		car_package_id = req.query.package;
+	}
+	
 	//loops through object to retrieve correct model
 	for (var i=0 ; i < models.model.length ; i++)
 	{
