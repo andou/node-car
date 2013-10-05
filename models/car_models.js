@@ -23,6 +23,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/black.jpg",
                             "paintFinish": [
                                 {
@@ -43,6 +44,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/red.jpg",
                             "paintFinish": [
                                 {
@@ -63,6 +65,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/white.jpg",
                             "paintFinish": [
                                 {
@@ -83,6 +86,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -116,6 +120,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/black.jpg",
                             "paintFinish": [
                                 {
@@ -136,6 +141,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/blue.jpg",
                             "paintFinish": [
                                 {
@@ -155,9 +161,10 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "isDefault": true,
                     "name": "S",
+                    "thumbnail": "/images/500/thumb.jpg",
                     "isAuto": false,
                     "engineSize": 2,
                     "engineDescription": "1.2 69CV",
@@ -168,6 +175,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/black.jpg",
                             "paintFinish": [
                                 {
@@ -188,6 +196,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/red.jpg",
                             "paintFinish": [
                                 {
@@ -208,6 +217,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/white.jpg",
                             "paintFinish": [
                                 {
@@ -228,6 +238,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -247,7 +258,7 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 4,
                     "isDefault": true,
                     "name": "GQ",
                     "thumbnail": "/images/500/thumb.jpg",
@@ -261,6 +272,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/black.jpg",
                             "paintFinish": [
                                 {
@@ -281,6 +293,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/red.jpg",
                             "paintFinish": [
                                 {
@@ -301,6 +314,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/white.jpg",
                             "paintFinish": [
                                 {
@@ -321,6 +335,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -347,7 +362,7 @@ var models = {
             "name": "500 C",
             "baseCost": 15.578,
             "thumbnail": "/images/500c/thumb.jpg",
-            "mainImage": "/images/500c/plain.jpg",
+            "mainImage": "/images/500c/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -364,6 +379,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/black.jpg",
                             "paintFinish": [
                                 {
@@ -384,6 +400,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/blue.jpg",
                             "paintFinish": [
                                 {
@@ -404,6 +421,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/white.jpg",
                             "paintFinish": [
                                 {
@@ -424,6 +442,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -457,6 +476,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/black.jpg",
                             "paintFinish": [
                                 {
@@ -477,6 +497,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/blue.jpg",
                             "paintFinish": [
                                 {
@@ -496,9 +517,10 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "isDefault": true,
                     "name": "S",
+                    "thumbnail": "/images/500c/thumb.jpg",
                     "isAuto": false,
                     "engineSize": 2,
                     "engineDescription": "1.2 69CV",
@@ -509,6 +531,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/black.jpg",
                             "paintFinish": [
                                 {
@@ -529,6 +552,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/red.jpg",
                             "paintFinish": [
                                 {
@@ -549,6 +573,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/white.jpg",
                             "paintFinish": [
                                 {
@@ -569,6 +594,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -588,7 +614,7 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 4,
                     "isDefault": true,
                     "name": "GQ",
                     "thumbnail": "/images/500c/thumb.jpg",
@@ -602,6 +628,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/black.jpg",
                             "paintFinish": [
                                 {
@@ -622,6 +649,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/red.jpg",
                             "paintFinish": [
                                 {
@@ -642,6 +670,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/white.jpg",
                             "paintFinish": [
                                 {
@@ -662,6 +691,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500c/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -705,6 +735,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l/black.jpg",
                             "paintFinish": [
                                 {
@@ -725,6 +756,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l/blue.jpg",
                             "paintFinish": [
                                 {
@@ -745,6 +777,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l/white.jpg",
                             "paintFinish": [
                                 {
@@ -765,6 +798,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -798,6 +832,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l/black.jpg",
                             "paintFinish": [
                                 {
@@ -818,6 +853,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l/blue.jpg",
                             "paintFinish": [
                                 {
@@ -861,6 +897,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_trekking/black.jpg",
                             "paintFinish": [
                                 {
@@ -881,6 +918,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_trekking/blue.jpg",
                             "paintFinish": [
                                 {
@@ -901,6 +939,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_trekking/white.jpg",
                             "paintFinish": [
                                 {
@@ -921,6 +960,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_trekking/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -954,6 +994,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_trekking/black.jpg",
                             "paintFinish": [
                                 {
@@ -974,6 +1015,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_trekking/blue.jpg",
                             "paintFinish": [
                                 {
@@ -1017,6 +1059,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_living/black.jpg",
                             "paintFinish": [
                                 {
@@ -1037,6 +1080,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_living/blue.jpg",
                             "paintFinish": [
                                 {
@@ -1057,6 +1101,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_living/white.jpg",
                             "paintFinish": [
                                 {
@@ -1077,6 +1122,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_living/yellow.jpg",
                             "paintFinish": [
                                 {
@@ -1110,6 +1156,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_living/black.jpg",
                             "paintFinish": [
                                 {
@@ -1130,6 +1177,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
+                            "accumilativeCost": 500,
                             "mainImage": "/images/500l_living/black.jpg",
                             "paintFinish": [
                                 {
