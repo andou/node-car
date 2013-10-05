@@ -19,23 +19,25 @@ block navigation
 				a(href="#") configure
 			li
 				a(href="#") contact
+				
+		div.basket
 
 block picker
 	section.picker
 		nav
 			ul.choose
 				li.left
-					a(href="#") <
+				
 				li
 					p choose package
 				li.right
-					a(href="#") >
-					
-		div.running_total
-			p Price &pound;0
 					form(action='/package',method='get')#modelForm
 						input(type="hidden", name="model")#itemID
 						button(type="submit") >
+					
+		div.running_total
+			p Price &pound;0
+		
 		nav.items
 			ul.menu_left
 				- all_models.forEach(function(item,index) {

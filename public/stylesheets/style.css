@@ -172,8 +172,8 @@ p {
 }
 
 /* Desktop Navigation */
-header.navigation.desktop { background: #5f5e5f; color: #FFF;}
-header.navigation.desktop ul { width: 60%; height: 100%; float: left; margin-left: 10%;}
+header.navigation.desktop { background: #333333; color: #FFF;}
+header.navigation.desktop ul { width: 60%; height: 100%; float: left; margin-left: 20%;}
 header.navigation.desktop ul li { width: 20%; float: left; text-align: center; line-height: 40px; text-transform: capitalize;}
 header.navigation.desktop ul li.active a { font-weight: bold; }
 header.navigation.desktop .logo {width: 10%; float: left; background: url('../images/navigation/logo.png') no-repeat center center; background-size: 25%; line-height: 40px; text-align: center; height: 100%;}
@@ -181,7 +181,7 @@ header.navigation.desktop .logo {width: 10%; float: left; background: url('../im
 header.navigation.desktop .basket { width: 10%; float: right; background: url('../images/navigation/menuicon2.png') no-repeat center center; background-size: 20%; line-height: 40px; text-align: center; height: 100%;}
 
 /* Tablet & Mobile Navigation*/
-header.navigation.mobile { background: #5f5e5f;}
+header.navigation.mobile { background: #333;}
 header.navigation.mobile #left-activator {background: url('../images/navigation/menuicon.png') no-repeat center center; width: 20%; border-right: 1px solid #808080}
 header.navigation.mobile #center-content {width: 40%; background: url('../images/navigation/logo.png') no-repeat center center; margin-left: 10%;}
 header.navigation.mobile #right-activator {background: url('../images/navigation/menuicon2.png') no-repeat center center; width: 20%; border-left: 1px solid #808080;}
@@ -192,7 +192,9 @@ nav.slide-content.left ul.main_navigation li { text-transform: capitalize; font-
 
 #content { background: #FFF; }
 
-.footer { width: 100%; height: 100px; background: red; display: block; position: fixed; bottom: 0;}
+.running_total {background: #333; color: #FFF; padding: 3% 1%; display: none;}
+
+
 
 /* Tablet specific styles */
 @media only screen and (max-width: 1024px) {
@@ -213,15 +215,40 @@ nav.slide-content.left ul.main_navigation li { text-transform: capitalize; font-
 	.slide-content li a {
 		padding: 20px;
 	}
+	.running_total {
+		display: block;
+	}
 }
 /* Tablet specific styles in Landscape orientation */
 @media only screen and (max-width: 1024px) and (orientation: landscape) {
 	header.navigation.mobile #center-content {
 		background-size: 10%;
 	}
-}
+	header.navigation.mobile #left-activator {
+		background-size: 10%;
+	}
+	header.navigation.mobile #right-activator {
+		background-size: 10%;
+	}
+}	
 /* Mobile specific styles */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
+	header.navigation.mobile #center-content {
+		background-size: 10%;
+	}
+	
+	header.navigation.mobile #left-activator {
+		background-size: 10%;
+	}
+	
+	header.navigation.mobile #right-activator {
+		background-size: 15%;
+	}
+	
+	.running_total { display: block; }
+}
+@media only screen and (max-width: 767px) {
+	
 	.csstransforms #content.slid-right {
 	  -webkit-transform: translate(85%);
 	     -moz-transform: translate(85%);
@@ -241,17 +268,16 @@ nav.slide-content.left ul.main_navigation li { text-transform: capitalize; font-
 	.slide-content {
 		width: 85%;
 	}
-	
 	header.navigation.mobile #center-content {
-		background-size: 25%;
+		background-size: 20%;
 	}
 	
 	header.navigation.mobile #left-activator {
-		background-size: 25%;
+		background-size: 20%;
 	}
 	
 	header.navigation.mobile #right-activator {
-		background-size: 30%;
+		background-size: 25%;
 	}
 }
 /* Mobile specific styles in Landscape orientation */
