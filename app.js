@@ -38,7 +38,6 @@ if ('development' == app.get('env')) {
 app.get('/', routes.carmodel);
 app.get('/package', routes.carpackage);
 app.get('/colour', routes.carcolour);
-app.get('/fake', routes.fake);
 
 app.get('/carmodels', routes.carmodels);
 
