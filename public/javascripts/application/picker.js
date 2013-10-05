@@ -8,7 +8,6 @@
 			$(".preview .image img").attr('src', $(this).find('input[name="mainImage"]').val());
 		}
 		if(typeof $(this).find('input[name="runningCost"]') != 'undefined') { 
-			console.log($(this).find('input[name="runningCost"]').val());
 			var val = $(this).find('input[name="runningCost"]').val();
 			$('.running_total').each(function(){
 				$(this).find('.cost').html(val);

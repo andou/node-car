@@ -33,7 +33,7 @@ block picker
 						button(type="submit") >
 		div.running_total
 			p.runningCost Price &pound; 
-				div.cost					
+				div.cost #{running_total}
 		nav.items
 			ul.menu_left
 				- all_models.forEach(function(item,index) {
@@ -52,4 +52,4 @@ block preview
 							
 		div.running_total
 			p.runningCost Price &pound; 
-				div.cost
+				div.cost #{running_total}

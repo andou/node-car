@@ -34,6 +34,9 @@ block picker
 						input(type="hidden", name="model", value="#{model.id}")
 						input(type="hidden", name="package")#itemID
 						button(type="submit") >
+		div.running_total
+			p.runningCost Price &pound; 
+				div.cost #{running_total}						
 		nav.items
 			ul.menu_left
 				- model.packages.forEach(function(item,index) {
@@ -41,13 +44,13 @@ block picker
 					p= item.name
 					img(src=item.thumbnail, alt="thumbnail")
 					input(type="hidden", name="id", value="#{item.id}")
+					input(type="hidden", name="runningCost", value="#{(model.baseCost + item.accumilativeCost)}")
 				- })
 block preview
 	section.preview
 		div.image
 			img(src="#{all_models[model.id - 1].mainImage}")
 			
-			
-			
-			
-			
+		div.running_total
+			p.runningCost Price &pound; 
+				div.cost #{running_total}
