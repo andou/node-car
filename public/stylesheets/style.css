@@ -156,7 +156,7 @@ p {
 }
 
 .slide-content.visible.right{
-	left:15%;
+	right: 0;
 }
 
 .slide-content.scroll {
