@@ -155,9 +155,10 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "isDefault": true,
                     "name": "S",
+                    "thumbnail": "/images/500/thumb.jpg",
                     "isAuto": false,
                     "engineSize": 2,
                     "engineDescription": "1.2 69CV",
@@ -247,7 +248,7 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 4,
                     "isDefault": true,
                     "name": "GQ",
                     "thumbnail": "/images/500/thumb.jpg",
@@ -347,7 +348,7 @@ var models = {
             "name": "500 C",
             "baseCost": 15.578,
             "thumbnail": "/images/500c/thumb.jpg",
-            "mainImage": "/images/500c/plain.jpg",
+            "mainImage": "/images/500c/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -496,9 +497,10 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 3,
                     "isDefault": true,
                     "name": "S",
+                    "thumbnail": "/images/500c/thumb.jpg",
                     "isAuto": false,
                     "engineSize": 2,
                     "engineDescription": "1.2 69CV",
@@ -588,7 +590,7 @@ var models = {
                     ]
                 },
                 {
-                    "id": 1,
+                    "id": 4,
                     "isDefault": true,
                     "name": "GQ",
                     "thumbnail": "/images/500c/thumb.jpg",
