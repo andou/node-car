@@ -29,7 +29,7 @@ block picker
 					p choose package
 				li.right
 					form(action='/package',method='get')#modelForm
-						input(type="hidden", name="model")#itemID
+						input(type="hidden", name="model", value="#{all_models[0].id}")#itemID
 						button(type="submit") >
 		nav.items
 			ul.menu_left

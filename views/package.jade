@@ -23,24 +23,31 @@ block picker
 	section.picker
 		nav
 			ul.choose
-				li.left
+				li.left	
+					form(action='/', method='get')
+						input(type="hidden", name="model", value="#{model.id}")
+						button(type="submit") <
 				li
 					p choose package
 				li.right
-					form(action='/package',method='get')
+					form(action='/colour',method='get')
 						input(type="hidden", name="model", value="#{model.id}")
 						input(type="hidden", name="package")#itemID
-						button >
+						button(type="submit") >
 		nav.items
 			ul.menu_left
 				- model.packages.forEach(function(item,index) {
 				li.item
 					p= item.name
 					img(src=item.thumbnail, alt="thumbnail")
-					input(type="hidden", value="#{item.mainImage}")
 					input(type="hidden", name="id", value="#{item.id}")
 				- })
 block preview
 	section.preview
 		div.image
-			img(src="#{all_models[0].mainImage}")
+			img(src="#{all_models[model.id - 1].mainImage}")
+			
+			
+			
+			
+			
