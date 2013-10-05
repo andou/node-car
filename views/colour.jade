@@ -24,8 +24,9 @@ block picker
 		nav
 			ul.choose
 				li.left	
-					form(action='/', method='get')
+					form(action='/package', method='get')
 						input(type="hidden", name="model", value="#{model.id}")
+						input(type="hidden", name="package", value="#{package.id}")
 						button(type="submit") <
 				li
 					p choose package
