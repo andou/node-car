@@ -343,7 +343,7 @@ var models = {
             "isDefault": true,
             "name": "500 C",
             "baseCost": 15.578,
-            "thumbnail": "/images/500c/thumb.png",
+            "thumbnail": "/images/500c/thumb.jpg",
             "mainImage": "/images/500c/plain.jpg",
             "packages": [
                 {
