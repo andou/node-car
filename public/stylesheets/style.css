@@ -146,7 +146,6 @@ p {
 	height: 100%;	
 	position: absolute;
 	top: 0;
-	left: 0;
 	min-height: 100%;
 	overflow: hidden;	
 }
@@ -155,7 +154,10 @@ p {
 	display: block;	
 }
 
-.slide-content.visible.right{
+.slide-content.left {
+	left: 0;
+}
+.slide-content.right{
 	right: 0;
 }
 
