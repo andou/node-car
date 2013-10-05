@@ -1,5 +1,5 @@
 var models = {
-	    "model": [
+	    "models": [
 	              {
 	                  "isDefault": true,
 	                  "name": "1 series",
@@ -15,7 +15,7 @@ var models = {
 	                          "engineDescription": "turbo ... ",
 	                          "fuelType": "petrol",
 	                          "accumilativeCost": 5000,
-	                          "images": [
+	                          "colors": [
 	                              {
 	                                  "isDefault": true,
 	                                  "color": "black",
