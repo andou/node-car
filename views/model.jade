@@ -2,17 +2,11 @@ extends layout
 
 block navigation
 	header.navigation
-		div.tablet_navigation
-			p test
-			
-		div.logo
-			p test
-			
-		div.basket
-			p test
-			
-		nav
-			ul.desktop
+				
+		nav.desktop
+			div.logo
+				p test			
+			ul
 				li 
 					a(href="#") home
 				li 
@@ -23,6 +17,22 @@ block navigation
 					a(href="#") configure
 				li
 					a(href="#") contact
+					
+			div.basket
+				div.count
+					p 2
+				
+		nav.mobile
+			div.menu
+				p test
+				
+			div.logo
+				p test
+			
+			div.basket
+				p test2
+				
+			
 
 block picker
 	section.picker
