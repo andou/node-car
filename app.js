@@ -35,7 +35,10 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', routes.carmodel);
+app.get('/package', routes.carpackage);
+app.get('/color', routes.carcolor);
+
 app.get('/carmodels', routes.carmodels);
 
 http.createServer(app).listen(app.get('port'), function(){
