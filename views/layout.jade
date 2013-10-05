@@ -3,9 +3,29 @@ html
 	head
 		title #{title}
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/picker.css')
+		link(rel='stylesheet', href='/stylesheets/temp_styles.css')
+		meta(name="viewport", content="width=device-width, initial-scale=1.0", user-scalable=0)
 body
 	block navigation
-	block picker
-	block preview
+	nav#nav.slide-content.left
+		ul.main_navigation
+			li 
+				a(href="#") home
+			li 
+				a(href="#") products
+			li 
+				a(href="#") services
+			li.active 
+				a(href="#") configure
+			li
+				a(href="#") contact
+	nav#nav.slide-content.right
+	div#content
+		block picker
+		block preview
 	script(type='text/javascript',src='/javascripts/vendor/jquery/jquery.min.js')
+	script(type='text/javascript',src='/javascripts/vendor/modernizr/modernizr.js')
 	script(type='text/javascript',src='/javascripts/application/pages.js')
+	script(type='text/javascript',src='/javascripts/application/slider.js')
+	
