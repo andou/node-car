@@ -2,8 +2,24 @@ extends layout
 
 block navigation
 	header.navigation
-		p welcome to the header.
-
+		div.tablet_navigation
+			p test
+		div.logo
+			p test
+		div.basket
+			p test
+		nav
+			ul.desktop
+				li 
+					a(href="#") home
+				li 
+					a(href="#") products
+				li 
+					a(href="#") services
+				li.active 
+					a(href="#") configure
+				li
+					a(href="#") contact
 
 block picker
 	section.picker
@@ -12,12 +28,7 @@ block picker
 		p Welcome to #{title}
 		p provaprovaprova
 			div#test_id.marius ciao #{title}
-				ul.pippo
-					li #{title}
-						- rows.forEach(function(item) {
-							li= item
-						- })
-
+				
 block preview
 	section.preview
 		p this is the preview.
