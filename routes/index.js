@@ -17,8 +17,21 @@ exports.carmodel = function(req, res){
 		car_model_id = req.query.model;
 	}
 
+	//loops through object to retrieve correct model
+	for (var i=0 ; i < models.model.length ; i++)
+	{
+    if (models.model[i].id == car_model_id) {
+    	car_model = models.model[i];
+    	break;
+    }
+	}
+
 	//running total
 	var rtotal = 0;
+
+	if(car_model!==undefined)
+		rtotal=car_model.baseCost;
+
 
 	res.render('model', { title: 'Car Configurator', all_models: models.model, running_total: rtotal, model_id: car_model_id });
 
@@ -52,8 +65,21 @@ exports.carpackage = function(req, res){
     	break;
     }
 	}
-	if(car_model!==undefined)
+	if(car_model!==undefined){
 		rtotal=car_model.baseCost;
+		
+		//loops through retrieved car model to retrieve correct package
+		for (var i=0 ; i < car_model.packages.length ; i++)
+		{
+	    if (car_model.packages[i].id == car_package_id) {
+	    	car_package = car_model.packages[i];
+	    	break;
+	    }
+		}
+		if(car_package!==undefined){
+			rtotal += car_package.accumilativeCost;
+		}
+	}
 
 	res.render('package', { title: 'Car Configurator', all_models: models.model, model:car_model,running_total: rtotal, package_id: car_package_id });
 };
