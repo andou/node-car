@@ -5,8 +5,8 @@ var models = {
             "isDefault": true,
             "name": 500,
             "baseCost": 12.249,
-            "thumbnail": "/img/500thumb.jpg",
-            "mainImage": "/img/large/500.jpg",
+            "thumbnail": "/public/images/500/thumb.jpg",
+            "mainImage": "/public/images/500/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -22,7 +22,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -42,7 +42,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
-                            "mainImage": "/img/large/1_series/red.jpg",
+                            "mainImage": "/public/images/500/red.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -62,7 +62,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -82,7 +82,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -114,7 +114,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -134,7 +134,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -166,7 +166,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -186,7 +186,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
-                            "mainImage": "/img/large/1_series/red.jpg",
+                            "mainImage": "/public/images/500/red.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -206,7 +206,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -226,7 +226,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -258,7 +258,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -278,7 +278,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
-                            "mainImage": "/img/large/1_series/red.jpg",
+                            "mainImage": "/public/images/500/red.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -298,7 +298,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -318,7 +318,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -343,8 +343,8 @@ var models = {
             "isDefault": true,
             "name": "500 C",
             "baseCost": 15.578,
-            "thumbnail": "/img/500Cthumb.jpg",
-            "mainImage": "/img/large/500C.jpg",
+            "thumbnail": "/public/images/500c/plain.png",
+            "mainImage": "/public/images/500c/thumb.jpg",
             "packages": [
                 {
                     "id": 1,
@@ -360,7 +360,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500c/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -380,7 +380,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500c/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -400,7 +400,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500c/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -420,7 +420,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500c/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -452,7 +452,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500c/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -472,7 +472,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500c/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -504,7 +504,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500c/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -524,7 +524,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
-                            "mainImage": "/img/large/1_series/red.jpg",
+                            "mainImage": "/public/images/500c/red.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -544,7 +544,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500c/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -564,7 +564,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500c/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -596,7 +596,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500c/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -616,7 +616,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "red",
-                            "mainImage": "/img/large/1_series/red.jpg",
+                            "mainImage": "/public/images/500c/red.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -636,7 +636,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500c/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -656,7 +656,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500c/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -681,8 +681,8 @@ var models = {
             "isDefault": true,
             "name": "500 L",
             "baseCost": 15879,
-            "thumbnail": "/img/thumb500L.jpg",
-            "mainImage": "/img/large/500L.jpg",
+            "thumbnail": "/public/images/500l/thumn.jpg",
+            "mainImage": "/public/images/500l/large/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -698,7 +698,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500l/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -718,7 +718,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500l/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -738,7 +738,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500l/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -758,7 +758,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500l/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -790,7 +790,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500l/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -810,7 +810,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500l/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -835,8 +835,8 @@ var models = {
             "isDefault": true,
             "name": "500 L Trekking",
             "baseCost": 19811,
-            "thumbnail": "/img/thumb500T.jpg",
-            "mainImage": "/img/large/500T.jpg",
+            "thumbnail": "/public/images/500l_trekking/thumb.jpg",
+            "mainImage": "/public/images/500l_trekking/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -852,7 +852,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500l_trekking/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -872,7 +872,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500l_trekking/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -892,7 +892,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500l_trekking/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -912,7 +912,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500l_trekking/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -944,7 +944,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500l_trekking/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -964,7 +964,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500l_trekking/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -989,8 +989,8 @@ var models = {
             "isDefault": true,
             "name": "500 L Living",
             "baseCost": 19357,
-            "thumbnail": "/img/thumb500Living.jpg",
-            "mainImage": "/img/large/500Living.jpg",
+            "thumbnail": "/public/images/500l_living/thumb.jpg",
+            "mainImage": "/public/images/500l_living/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -1006,7 +1006,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/pop/black.jpg",
+                            "mainImage": "/public/images/500l_living/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -1026,7 +1026,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/blue.jpg",
+                            "mainImage": "/public/images/500l_living/blue.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -1046,7 +1046,7 @@ var models = {
                             "id": 3,
                             "isDefault": false,
                             "colour": "white",
-                            "mainImage": "/img/large/1_series/white.jpg",
+                            "mainImage": "/public/images/500l_living/white.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -1066,7 +1066,7 @@ var models = {
                             "id": 4,
                             "isDefault": false,
                             "colour": "yellow",
-                            "mainImage": "/img/large/1_series/yellow.jpg",
+                            "mainImage": "/public/images/500l_living/yellow.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -1098,7 +1098,7 @@ var models = {
                             "id": 1,
                             "isDefault": true,
                             "colour": "black",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500l_living/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
@@ -1118,7 +1118,7 @@ var models = {
                             "id": 2,
                             "isDefault": false,
                             "colour": "blue",
-                            "mainImage": "/img/large/1_series/black.jpg",
+                            "mainImage": "/public/images/500l_living/black.jpg",
                             "paintFinish": [
                                 {
                                     "id": 1,
