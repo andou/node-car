@@ -8,7 +8,6 @@ block navigation
 	header.navigation.desktop
 		div.logo 
 			p test
-			
 		ul
 			li 
 				a(href="#") home
@@ -20,17 +19,20 @@ block navigation
 				a(href="#") configure
 			li
 				a(href="#") contact
-				
-	
 
 block picker
 	section.picker
-		h2 hello
-		h1 #{title}
-		p Welcome to #{title}
-		p provaprovaprova
-			div#test_id.marius ciao #{title}
-				
+		p name: #{model.name}
+		p baseCost: #{model.baseCost}
+		p thumbnail: #{model.thumbnail}
+		p isDefault: #{model.isDefault}
+		p mainImage: #{model.mainImage}
+		p packages:
+			ul
+				- model.packages.forEach(function(item,index) {
+				li
+					p= item.name+' '+index
+				- })
 block preview
 	section.preview
-		p this is the preview.
+		

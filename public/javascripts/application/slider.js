@@ -64,45 +64,8 @@
 }($));
 var rightOpen = false;
 var leftOpen = false;
-$(document).ready(function () {
-    /*$('body').swipeRight(function () {
-        //alert('right swipe right:' + rightOpen + ' left: ' + leftOpen );
-        if (rightOpen) {
-            toggleRight();
-        } else if (leftOpen) {
-            //alert('right swipe, left open');
-            toggleRight();
-        } else {
-            //alert('right swipe, nothing open');
-            toggleLeft();
-        }
-    });
-    $('body').swipeLeft(function () {
-        //alert('left swipe right:' + rightOpen + ' left: ' + leftOpen );
-        if (leftOpen) {
-            //alert('left swipe, left open');
-            toggleLeft();
-        } else {
-            //alert('left swipe, nothing open');
-            toggleRight();
-        }
-    });*/
+ 
 
-    function toggleRight() {
-        $('#right-activator').trigger('touchend');
-        if (rightOpen) {
-            rightOpen = false;
-        } else {
-            rightOpen = true;
-        }
-    }
 
-    function toggleLeft() {
-        $('#left-activator').trigger('touchend');
-        if (leftOpen) {
-            leftOpen = false;
-        } else {
-            leftOpen = true;
-        }
-    }
-});
+
+
