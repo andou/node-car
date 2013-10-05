@@ -343,8 +343,8 @@ var models = {
             "isDefault": true,
             "name": "500 C",
             "baseCost": 15.578,
-            "thumbnail": "/images/500c/plain.png",
-            "mainImage": "/images/500c/thumb.jpg",
+            "thumbnail": "/images/500c/thumb.png",
+            "mainImage": "/images/500c/plain.jpg",
             "packages": [
                 {
                     "id": 1,
@@ -681,8 +681,8 @@ var models = {
             "isDefault": true,
             "name": "500 L",
             "baseCost": 15879,
-            "thumbnail": "/images/500l/thumn.jpg",
-            "mainImage": "/images/500l/large/plain.png",
+            "thumbnail": "/images/500l/thumb.jpg",
+            "mainImage": "/images/500l/plain.png",
             "packages": [
                 {
                     "id": 1,
@@ -989,7 +989,7 @@ var models = {
             "isDefault": true,
             "name": "500 L Living",
             "baseCost": 19357,
-            "thumbnail": "/images/500l_living/thumb.jpg",
+            "thumbnail": "/images/500l_living/thumb.png",
             "mainImage": "/images/500l_living/plain.png",
             "packages": [
                 {
