@@ -5,19 +5,21 @@
 
 exports.carmodels = function(req, res){
 	
-	res.send(req.query.name);
-	//res.send(models);
+	//res.send(req.query.name);
+	res.send(models);
 };
 
 /*step 1*/
 exports.carmodel = function(req, res){
-	
+	var is_mobile = identify(req);
+
 	res.render('model', { title: 'Car Configurator', all_models: models.model});
 
 };
 
 /*step 2*/
 exports.carpackage = function(req, res){
+	var is_mobile = identify(req);
 	//default car model id
 	var car_model_id = 1;
 	//car model object
@@ -41,6 +43,7 @@ exports.carpackage = function(req, res){
 
 /*step 3*/
 exports.carcolour = function(req, res){
+	var is_mobile = identify(req);
 	//default car model id
 	var car_model_id = 1;
 	//car model object
