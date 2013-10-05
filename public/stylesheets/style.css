@@ -1,5 +1,6 @@
 /* Font Imports */
 @import url(http://fonts.googleapis.com/css?family=Roboto);
+@import url(http://fonts.googleapis.com/css?family=Roboto:700);
 
 html, body {
 	height: 100%;
@@ -172,19 +173,19 @@ p {
 }
 
 /* Desktop Navigation */
-header.navigation.desktop { background: #5f5e5f;}
-header.navigation.desktop ul { width: 60%; background: yellow; height: 100%; float: left; margin-left: 10%;}
-header.navigation.desktop ul li { width: 20%; float: left; text-align: center; line-height: 40px;}
+header.navigation.desktop { background: #5f5e5f; color: #FFF;}
+header.navigation.desktop ul { width: 60%; height: 100%; float: left; margin-left: 10%;}
+header.navigation.desktop ul li { width: 20%; float: left; text-align: center; line-height: 40px; text-transform: capitalize;}
+header.navigation.desktop ul li.active a { font-weight: bold; }
+header.navigation.desktop .logo {width: 10%; float: left; background: url('../images/navigation/logo.png') no-repeat center center; background-size: 25%; line-height: 40px; text-align: center; height: 100%;}
 
-header.navigation.desktop .logo {width: 10%; float: left; background: red; line-height: 40px; text-align: center;}
-
-header.navigation.desktop .basket { width: 10%; float: right; background: blue; line-height: 40px; text-align: center;}
+header.navigation.desktop .basket { width: 10%; float: right; background: url('../images/navigation/menuicon2.png') no-repeat center center; background-size: 20%; line-height: 40px; text-align: center; height: 100%;}
 
 /* Tablet & Mobile Navigation*/
 header.navigation.mobile { background: #5f5e5f;}
-header.navigation.mobile #left-activator {background: red; width: 15%;}
-header.navigation.mobile #center-content {width: 60%; background: #CCC; margin-left: 5%;}
-header.navigation.mobile #right-activator {background: green; width: 15%;}
+header.navigation.mobile #left-activator {background: url('../images/navigation/menuicon.png') no-repeat center center; width: 20%; border-right: 1px solid #808080}
+header.navigation.mobile #center-content {width: 40%; background: url('../images/navigation/logo.png') no-repeat center center; margin-left: 10%;}
+header.navigation.mobile #right-activator {background: url('../images/navigation/menuicon2.png') no-repeat center center; width: 20%; border-left: 1px solid #808080;}
 header.navigation.mobile .slide-content { width: 50%; }
 
 nav.slide-content.left ul.main_navigation { margin-top: 40px; }
@@ -192,13 +193,34 @@ nav.slide-content.left ul.main_navigation li { text-transform: capitalize; font-
 
 #content { background: #FFF; }
 
+/* Tablet specific styles */
 @media only screen and (max-width: 1024px) {
 	header.navigation.desktop {
 		display: none; 
 	}
+	header.navigation.mobile #center-content {
+		background-size: 10%;
+	}
+	header.navigation.mobile #right-activator {
+		background-size: 15%;
+	}
+	
+	header.navigation.mobile #left-activator {
+		background-size: 10%;
+	}
+	
+	.slide-content li a {
+		padding: 20px;
+	}
 }
-
-@media only screen and (max-width: 767px) {
+/* Tablet specific styles in Landscape orientation */
+@media only screen and (max-width: 1024px) and (orientation: landscape) {
+	header.navigation.mobile #center-content {
+		background-size: 10%;
+	}
+}
+/* Mobile specific styles */
+@media only screen and (max-width: 768px) {
 	.csstransforms #content.slid-right {
 	  -webkit-transform: translate(85%);
 	     -moz-transform: translate(85%);
@@ -217,5 +239,51 @@ nav.slide-content.left ul.main_navigation li { text-transform: capitalize; font-
 	}	
 	.slide-content {
 		width: 85%;
+	}
+	
+	header.navigation.mobile #center-content {
+		background-size: 25%;
+	}
+	
+	header.navigation.mobile #left-activator {
+		background-size: 25%;
+	}
+	
+	header.navigation.mobile #right-activator {
+		background-size: 30%;
+	}
+}
+/* Mobile specific styles in Landscape orientation */
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+	.csstransforms #content.slid-right {
+	  -webkit-transform: translate(65%);
+	     -moz-transform: translate(65%);
+	      -ms-transform: translate(65%);
+	       -o-transform: translate(65%);
+	          transform: translate(65%);
+	}
+	
+	
+	.csstransforms #content.slid-left {
+	  -webkit-transform: translate(-65%);
+	     -moz-transform: translate(-65%);
+	      -ms-transform: translate(-65%);
+	       -o-transform: translate(-65%);
+	          transform: translate(-65%);
+	}	
+	.slide-content {
+		width: 65%;
+	}
+	
+	header.navigation.mobile #center-content {
+		background-size: 20%;
+	}
+	
+	header.navigation.mobile #left-activator {
+		background-size: 20%;
+	}
+	
+	header.navigation.mobile #right-activator {
+		background-size: 25%;
 	}
 }
