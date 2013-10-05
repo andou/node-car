@@ -25,9 +25,14 @@ block picker
 		nav
 			ul.choose
 				li.left
+					a(href="#") <
 				li
 					p choose package
 				li.right
+					a(href="#") >
+					
+		div.running_total
+			p Price &pound;0
 					form(action='/package',method='get')#modelForm
 						input(type="hidden", name="model", value="#{all_models[0].id}")#itemID
 						button(type="submit") >
