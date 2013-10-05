@@ -7,6 +7,21 @@ var identify = function(req){
 	}
 }
 
-var changeImages() = function(models){
+var changeImages = function(models){
+
+	//loops through object to retrieve correct model
+	for (var i=0 ; i < models.model.length ; i++)
+	{
+		models.model[i].mainImage = changeImageName(models.model[i].mainImage);
+		models.model[i].thumbnail = changeImageName(models.model[i].thumbnail);
+
+	}
+
+}
+
+var changeImageName = function(image_name){
+    var image_split = image_name.split(".");
+    image_split[image_split.length-1] = image_split[image_split.length-2]+'_sml';
+    return image_split.join(".");
 
 }
