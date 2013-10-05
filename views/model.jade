@@ -1,16 +1,22 @@
 extends layout
 
 block navigation
-	p welcome to the sidebar.
+	header.navigation
+		p welcome to the header.
 
 
 block picker
-	h1 #{title}
-	p Welcome to #{title}
-	p provaprovaprova
-		div#test_id.marius ciao #{title}
-			ul.pippo
-				li #{title}
-					- rows.forEach(function(item) {
-						li= item
-					- })
+	section.picker
+		h1 #{title}
+		p Welcome to #{title}
+		p provaprovaprova
+			div#test_id.marius ciao #{title}
+				ul.pippo
+					li #{title}
+						- rows.forEach(function(item) {
+							li= item
+						- })
+
+block preview
+	section.preview
+		p this is the preview.
