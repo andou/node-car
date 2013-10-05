@@ -1,8 +1,30 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+html, body {
+	margin: 0 auto;
+	height: 100%;
+	font-family: 'Helvetica', sans-serif;
+}
+ul {margin: 0; padding: 0; list-style: none;}
+
+a{color: inherit; text-decoration: none;}
+
+header.navigation {}
+header.navigation nav {width: 100%; height: 50px; background: #424242; color: #FFF;}
+header.navigation nav ul.desktop {width: 60%; display: block; float:left;}
+header.navigation nav ul.desktop li {width: 20%; float: left; text-align: center; line-height: 50px;}
+header.navigation nav ul.desktop li a { text-transform: capitalize; }
+header.navigation nav ul.desktop li.active a { font-weight: bold; }
+
+header.navigation .logo { width: 20%; height: 100%; background: #CCC; float: left; text-align: center; }
+
+header.navigation .basket { width: 20%; height: 100%; background: blue; float: right; text-align: center;}
+
+header.navigation .tablet_navigation {width: 20%; height: 100%; background: red; float: left; display: none; text-align: center;}
+
+@media only screen and (max-width: 1024px) {
+	header.navigation nav ul.desktop {display: none;}
+	
+	header.navigation .tablet_navigation { display: block; }
+	
+	header.navigation .logo {margin-left: 10%; width: 40%;}
 }
 
-a {
-  color: #00B7FF;
-}
