@@ -3,12 +3,15 @@ html
 	head
 		title #{title}
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/preview_styles.css')
 		link(rel='stylesheet', href='/stylesheets/temp_styles.css')
+		link(rel='stylesheet', href='/stylesheets/picker.css')
 		meta(name="viewport", content="width=device-width, initial-scale=1.0", user-scalable=0)
 body
 	block navigation
 	nav#nav.slide-content.left
 		ul.main_navigation
+			//Mobile and Tablet navigtion
 			li 
 				a(href="#") home
 			li 

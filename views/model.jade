@@ -1,47 +1,42 @@
 extends layout
 
 block navigation
-	header.navigation
-				
-		nav.desktop
-			div.logo
-				p test			
-			ul
-				li 
-					a(href="#") home
-				li 
-					a(href="#") products
-				li 
-					a(href="#") services
-				li.active 
-					a(href="#") configure
-				li
-					a(href="#") contact
-					
-			div.basket
-				div.count
-					p 2
-				
-		nav.mobile
-			div.menu
-				p test
-				
-			div.logo
-				p test
-			
-			div.basket
-				p test2
-				
-			
+	header.navigation.mobile
+		div#left-activator.slide-button
+		div#center-content
+		div#right-activator.slide-button
+	header.navigation.desktop
+		div.logo 
+			p test
+		ul
+			li 
+				a(href="#") home
+			li
+				a(href="#") products
+			li
+				a(href="#") services
+			li
+				a(href="#") configure
+			li
+				a(href="#") contact
 
 block picker
 	section.picker
-		h2 hello
-		h1 #{title}
-		p Welcome to #{title}
-		p provaprovaprova
-			div#test_id.marius ciao #{title}
+		nav
+			ul.choose
+				li.left
+				li
+					p choose package
+				li.right
+					a(href="#") >
+		nav.items
+			ul.menu_left
+				- models.model.forEach(function(item,index) {
+				li.item
+					p= item.name
+					img(src=item.thumbnail, alt="thumbnail")
+				- })
 				
 block preview
 	section.preview
-		p this is the preview
+		div.image

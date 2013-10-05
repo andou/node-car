@@ -1,0 +1,5 @@
+@media only screen and (max-width: 1024px) {
+	#content .picker { width: 32%; }
+	#content .picker { border-right: solid 1% black;display:inline-block; vertical-align:top;}
+	#content .preview { width: 66%; height: 100%; display:inline-block; vertical-align:top;}
+}
