@@ -28,13 +28,17 @@ block picker
 				li
 					p choose package
 				li.right
-					a(href="#") >
+					form(action='/package',method='get')#modelForm
+						input(type="hidden", name="model")#itemID
+						button(type="submit") >
 		nav.items
 			ul.menu_left
-				- models.model.forEach(function(item,index) {
+				- all_models.forEach(function(item,index) {
 				li.item
 					p= item.name
 					img(src=item.thumbnail, alt="thumbnail")
+					input(type="hidden", name="mainImage", value="#{item.mainImage}")
+					input(type="hidden", name="id", value="#{item.id}")
 				- })
 				
 block preview
