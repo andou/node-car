@@ -3,10 +3,16 @@ html
 	head
 		title #{title}
 		link(rel='stylesheet', href='/stylesheets/style.css')
+		link(rel='stylesheet', href='/stylesheets/temp_styles.css')
 body
 	block navigation
-	block picker
-	block preview
+	nav#nav.slide-content.left
+	nav#nav.slide-content.right
+	div#content
+		block picker
+		block preview
 	script(type='text/javascript',src='/javascripts/vendor/jquery/jquery.min.js')
+	script(type='text/javascript',src='/javascripts/vendor/modernizr/modernizr.js')
 	script(type='text/javascript',src='/javascripts/application/pages.js')
+	script(type='text/javascript',src='/javascripts/application/slider.js')
 	meta(name="viewport", content="width=device-width, initial-scale=1.0", user-scalable=0)
