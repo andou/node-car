@@ -12,7 +12,17 @@ section.picker nav ul.menu_left li p { background: #9F2C2E; padding: 1% 0; borde
 
 section.picker nav ul.menu_left img { width: 90%; height: auto; }
 
-section.preview { width: 60%; float: right; }
+section.preview { width: 60%; float: left; height: 60%; margin-left: 5%; ;}
+
+section.preview .running_total,
+section.picker .running_total { background: #333; color: #FFF; padding: 2%; text-align: left;}
+
+section.preview .running_total p.runningCost,
+section.picker .running_total p.runningCost {
+	float: left;
+	width: 50%;
+	text-align: right;
+}
 
 section.picker nav ul.choose li button {
 	-webkit-appearance: none;

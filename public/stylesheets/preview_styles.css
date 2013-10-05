@@ -4,7 +4,7 @@
 	#content .picker { border-right: solid 1% black;display:inline-block; vertical-align:top;}
 	#content .picker .items { overflow:hidden; overflow-y: scroll;}
 	
-	#content .preview { width: 66%; height: 100%; display:inline-block; vertical-align:top;}
+	#content .preview { width: 60%; height: auto; display:inline-block; vertical-align:top;}
 	
 	#content .picker .items .menu_left .item img { width: 100%; }
 	

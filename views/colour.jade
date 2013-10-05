@@ -24,18 +24,28 @@ block navigation
 
 block picker
 	section.picker
-		p name: #{model.name}
-		p baseCost: #{model.baseCost}
-		p thumbnail: #{model.thumbnail}
-		p isDefault: #{model.isDefault}
-		p mainImage: #{model.mainImage}
-		p packages:
-			ul
-				- model.packages.forEach(function(item,index) {
+		nav
+			ul.choose
+				li.left	
+					form(action='/', method='get')
+						input(type="hidden", name="model", value="#{model.id}")
+						button(type="submit") <
 				li
-					p= item.name+' '+index
+					p choose package
+				li.right
+					form(action='/colour',method='get')
+						input(type="hidden", name="model", value="#{model.id}")
+						input(type="hidden", name="package")#itemID
+						button(type="submit") >
+		nav.items
+			ul.menu_left
+				- model.packages.forEach(function(item,index) {
+				li.item
+					p= item.name
+					img(src=item.thumbnail, alt="thumbnail")
+					input(type="hidden", name="id", value="#{item.id}")
 				- })
 block preview
 	section.preview
 		div.image
-			img(src="#{model.mainImage}")
+			img(src="#{all_models[model.id - 1].mainImage}")
