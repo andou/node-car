@@ -17,6 +17,13 @@ exports.carmodels = function(req, res){
 
 
 exports.carmodel = function(req, res){
-	res.render('index', { title: 'pippo', rows : ['aaa','bbb'] });
-	//res.send(models);
+	res.render('model', { title: 'Car Configurator', rows : ['aaa','bbb'] });
+};
+
+exports.carpackage = function(req, res){
+	res.render('package', { title: 'Car Configurator', rows : ['aaa','bbb'] });
+};
+
+exports.carcolor = function(req, res){
+	res.render('colour', { title: 'Car Configurator', rows : ['aaa','bbb'] });
 };
