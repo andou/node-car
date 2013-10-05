@@ -43,7 +43,7 @@ exports.carpackage = function(req, res){
 	if (req.query.package!==undefined) {
 		car_package_id = req.query.package;
 	}
-	
+
 	//loops through object to retrieve correct model
 	for (var i=0 ; i < models.model.length ; i++)
 	{
@@ -55,7 +55,7 @@ exports.carpackage = function(req, res){
 	if(car_model!==undefined)
 		rtotal=car_model.baseCost;
 
-	res.render('package', { title: 'Car Configurator', all_models: models.model, model:car_model,running_total: rtotal });
+	res.render('package', { title: 'Car Configurator', all_models: models.model, model:car_model,running_total: rtotal, package_id: car_package_id });
 };
 
 /*step 3*/
