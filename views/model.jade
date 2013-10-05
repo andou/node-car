@@ -1,0 +1,22 @@
+extends layout
+
+block navigation
+	header.navigation
+		p welcome to the header.
+
+
+block picker
+	section.picker
+		h1 #{title}
+		p Welcome to #{title}
+		p provaprovaprova
+			div#test_id.marius ciao #{title}
+				ul.pippo
+					li #{title}
+						- rows.forEach(function(item) {
+							li= item
+						- })
+
+block preview
+	section.preview
+		p this is the preview.
