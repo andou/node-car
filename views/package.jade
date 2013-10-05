@@ -1,0 +1,16 @@
+//- within this block you should access all the properties like below
+
+
+block preview
+	section.preview
+		p name: #{model.name}
+		p baseCost: #{model.baseCost}
+		p thumbnail: #{model.thumbnail}
+		p isDefault: #{model.isDefault}
+		p mainImage: #{model.mainImage}
+		p packages:
+			ul
+				- model.packages.forEach(function(item,index) {
+				li
+					p= item.name+' '+index
+				- })
