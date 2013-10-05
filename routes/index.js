@@ -13,7 +13,10 @@ exports.carmodels = function(req, res){
 exports.carmodel = function(req, res){
 	var is_mobile = identify(req);
 
-	res.render('model', { title: 'Car Configurator', all_models: models.model});
+	//running total
+	var rtotal = 0;
+
+	res.render('model', { title: 'Car Configurator', all_models: models.model, running_total: rtotal});
 
 };
 
@@ -24,6 +27,8 @@ exports.carpackage = function(req, res){
 	var car_model_id = 1;
 	//car model object
 	var car_model = null;
+	//running total
+	var rtotal = 0;
 	//use id if provided
 	if (req.query.model!==undefined) {
 		car_model_id = req.query.model;
@@ -37,8 +42,10 @@ exports.carpackage = function(req, res){
     	break;
     }
 	}
+	if(car_model!==undefined)
+		rtotal=car_model.baseCost;
 
-	res.render('package', { title: 'Car Configurator', all_models: models.model, model:car_model});
+	res.render('package', { title: 'Car Configurator', all_models: models.model, model:car_model,running_total: rtotal });
 };
 
 /*step 3*/
@@ -69,18 +76,27 @@ exports.carcolour = function(req, res){
     }
 	}
 
-	//loops through retrieved car model to retrieve correct package
-	for (var i=0 ; i < car_model.packages.length ; i++)
+
+	if(car_model!==undefined)
 	{
-    if (car_model.packages[i].id == car_package_id) {
-    	car_package = car_model.packages[i];
-    	break;
-    }
+		rtotal=car_model.baseCost;
+
+		//loops through retrieved car model to retrieve correct package
+		for (var i=0 ; i < car_model.packages.length ; i++)
+		{
+	    if (car_model.packages[i].id == car_package_id) {
+	    	car_package = car_model.packages[i];
+	    	break;
+	    }
+		}
+		if(car_package!==undefined){
+			rtotal += car_package.accumilativeCost;
+		}
 	}
 
 
 
-	res.render('colour', { title: 'Car Configurator', all_models: models.model, model:car_model, package:car_package});
+	res.render('colour', { title: 'Car Configurator', all_models: models.model, model:car_model, package:car_package,running_total: rtotal });
 };
 
 
