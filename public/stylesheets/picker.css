@@ -13,6 +13,7 @@ section.picker nav ul.menu_left img { width: 90%; height: auto; }
 
 section.picker .running_total { background: #5f5e5f; color: #FFF; padding: 2%; text-align: center;}
 
+/* Mobile */
 @media only screen and (max-width: 768px) {
 	#content { padding-top: 0; }
 	#content .picker { width: 100%; }
@@ -21,6 +22,7 @@ section.picker .running_total { background: #5f5e5f; color: #FFF; padding: 2%; t
 	section.picker .running_total { display: block;}
 }
 
+/* Tablet */
 @media only screen and (min-width: 1024px) {
 	#content { padding-top: 0; }
 	section.picker .running_total { display: none;}
