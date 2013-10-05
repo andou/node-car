@@ -29,6 +29,7 @@ var includeInThisContext = function(path) {
 }.bind(this);
 
 includeInThisContext(__dirname+"/models/car_models.js");
+includeInThisContext(__dirname+"/deviceidentifier/deviceidentifier.js");
 
 // development only
 if ('development' == app.get('env')) {

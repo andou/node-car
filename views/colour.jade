@@ -1,0 +1,38 @@
+extends layout
+
+block navigation
+	header.navigation.mobile
+		div#left-activator.slide-button
+		div#center-content
+		div#right-activator.slide-button
+	header.navigation.desktop
+		div.logo 
+			p test
+		ul
+			li 
+				a(href="#") home
+			li
+				a(href="#") products
+			li
+				a(href="#") services
+			li
+				a(href="#") configure
+			li
+				a(href="#") contact
+
+block picker
+	section.picker
+		p name: #{model.name}
+		p baseCost: #{model.baseCost}
+		p thumbnail: #{model.thumbnail}
+		p isDefault: #{model.isDefault}
+		p mainImage: #{model.mainImage}
+		p packages:
+			ul
+				- model.packages.forEach(function(item,index) {
+				li
+					p= item.name+' '+index
+				- })
+block preview
+	section.preview
+		
