@@ -1,16 +1,46 @@
-//- within this block you should access all the properties like below
+extends layout
 
-
+block navigation
+	header.navigation.mobile
+		div#left-activator.slide-button
+		div#center-content
+		div#right-activator.slide-button
+	header.navigation.desktop
+		div.logo 
+			p test
+		ul
+			li 
+				a(href="#") home
+			li
+				a(href="#") products
+			li
+				a(href="#") services
+			li
+				a(href="#") configure
+			li
+				a(href="#") contact
+block picker
+	section.picker
+		nav
+			ul.choose
+				li.left
+				li
+					p choose package
+				li.right
+					form(action='/package',method='get')
+						input(type="hidden", name="model", value="#{model.id}")
+						input(type="hidden", name="package")#itemID
+						button >
+		nav.items
+			ul.menu_left
+				- model.packages.forEach(function(item,index) {
+				li.item
+					p= item.name
+					img(src=item.thumbnail, alt="thumbnail")
+					input(type="hidden", value="#{item.mainImage}")
+					input(type="hidden", name="id", value="#{item.id}")
+				- })
 block preview
 	section.preview
-		p name: #{model.name}
-		p baseCost: #{model.baseCost}
-		p thumbnail: #{model.thumbnail}
-		p isDefault: #{model.isDefault}
-		p mainImage: #{model.mainImage}
-		p packages:
-			ul
-				- model.packages.forEach(function(item,index) {
-				li
-					p= item.name+' '+index
-				- })
+		div.image
+			img(src="#{all_models[0].mainImage}")
