@@ -24,6 +24,6 @@ exports.carpackage = function(req, res){
 	res.render('package', { title: 'Car Configurator', rows : ['aaa','bbb'] });
 };
 
-exports.carcolor = function(req, res){
+exports.carcolour = function(req, res){
 	res.render('colour', { title: 'Car Configurator', rows : ['aaa','bbb'] });
 };
