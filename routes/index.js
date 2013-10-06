@@ -32,7 +32,6 @@ exports.carmodel = function(req, res){
 	if(car_model!==undefined)
 		rtotal=car_model.baseCost;
 
-
 	res.render('model', { title: 'Car Configurator', all_models: models.model, running_total: rtotal, model_id: car_model_id });
 
 };
@@ -67,7 +66,7 @@ exports.carpackage = function(req, res){
 	}
 	if(car_model!==undefined){
 		rtotal=car_model.baseCost;
-		
+
 		//loops through retrieved car model to retrieve correct package
 		for (var i=0 ; i < car_model.packages.length ; i++)
 		{
@@ -95,12 +94,19 @@ exports.carcolour = function(req, res){
 	var car_package_id = 1;
 	//car model object
 	var car_package = null;
+	//car color id
+	var car_colour_id = 1;
+	//car colour object
+	var car_colour = null;
 
 	if (req.query.model!==undefined) {
 		car_model_id = req.query.model;
 	}
 	if (req.query.package!==undefined) {
 		car_package_id = req.query.package;
+	}
+	if (req.query.colour!==undefined) {
+		car_colour_id = req.query.colour;
 	}
 
 	//loops through object to retrieve correct model
@@ -111,7 +117,6 @@ exports.carcolour = function(req, res){
     	break;
     }
 	}
-
 
 	if(car_model!==undefined)
 	{
@@ -127,12 +132,21 @@ exports.carcolour = function(req, res){
 		}
 		if(car_package!==undefined){
 			rtotal += car_package.accumilativeCost;
+			//loops through retrieved car model to retrieve correct package
+			for (var i=0 ; i < car_package.colours.length ; i++)
+			{
+		    if (car_package.colours[i].id == car_colour_id) {
+		    	car_colour = car_package.colours[i];
+		    	break;
+		    }
+			}
+			if(car_colour!==undefined){
+				rtotal += car_colour.accumilativeCost;
+			}
 		}
 	}
 
-
-
-	res.render('colour', { title: 'Car Configurator', all_models: models.model, model:car_model, package:car_package,running_total: rtotal });
+	res.render('colour', { title: 'Car Configurator', all_models: models.model, model:car_model, package:car_package,colour:car_colour, running_total: rtotal });
 };
 
 

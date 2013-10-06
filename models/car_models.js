@@ -4,7 +4,7 @@ var models = {
             "id": 1,
             "isDefault": true,
             "name": 500,
-            "baseCost": 12.249,
+            "baseCost": 12249,
             "thumbnail": "/images/500/thumb.jpg",
             "mainImage": "/images/500/plain.png",
             "packages": [
@@ -360,7 +360,7 @@ var models = {
             "id": 2,
             "isDefault": true,
             "name": "500 C",
-            "baseCost": 15.578,
+            "baseCost": 15578,
             "thumbnail": "/images/500c/thumb.jpg",
             "mainImage": "/images/500c/plain.png",
             "packages": [
