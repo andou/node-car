@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	
 	$("#save").bind('click touch', function(){
 		var name=prompt("Please enter a label to save your configuration");
 	    if (name!=null){
@@ -29,7 +28,7 @@ $(document).ready(function(){
 	    	
 	    	
 	    	$(".main_navigation.basket").append(storedConfig);
-	    	$(".navigation.desktop .basket .content ul").appendChild(storedConfig);
+	    	$(".navigation.desktop .basket .content ul").append(storedConfig);
 	    }
 	});
 });
