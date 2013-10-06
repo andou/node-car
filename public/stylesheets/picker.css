@@ -2,9 +2,9 @@ section.picker nav {width: 100%; height: 60px;}
 section.picker nav ul.choose {width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242;}
 section.picker nav ul.choose li.left {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
 
-section.picker {width: 35%; height: 60px; float: left;}
+section.picker {width: 35%; float: left;}
 section.picker nav {width: 100%; height: 100%; overflow:hidden; overflow-y:scroll;}
-section.picker nav ul.choose { width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242;}
+section.picker nav ul.choose { width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242; height: 60px;}
 section.picker nav ul.choose li.left {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
 
 section.picker nav ul.choose li {width: 70%; height: 100%; display: block; float: left; line-height: 65px;}
@@ -29,12 +29,17 @@ section.preview .socialNetwork ul {height: 100%; display: block;}
 section.preview .socialNetwork ul li {width: 33.33%; float: left; border-right: 1px solid #FFF; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 1%;}
 section.preview .socialNetwork ul li:last-child { border-right: none; }
 
+section.preview .socialNetwork ul li .icon {background: url('../images/social/dealericon.png') no-repeat center center; background-size: 70%; }
+section.preview .socialNetwork ul li .icon { height: 25px; width: 25px; float: right; margin-top: 12px;}
+section.preview .socialNetwork ul li#save .icon {background: url('../images/navigation/menuicon2.png') no-repeat center center; background-size: 100%; }
+section.preview .socialNetwork ul li#share .icon {background: url('../images/social/shareicon.png') no-repeat center center; background-size: 100%; }
+
 section.picker .socialNetwork { display: none; height: 40px; bottom: 0; position: fixed; background: #333; width: 100%; }
 section.picker .socialNetwork ul { height: 100%; display: block;}
 section.picker .socialNetwork ul li { width: 33.33%; float: left; border-right: 1px solid #808080; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
 section.picker .socialNetwork ul li:last-child { border-right: none; }
 
-section.picker .socialNetwork ul li#save .icon { width: 100%; height: 100%; display: block; background: red; }
+section.picker .socialNetwork ul li#save .icon { width: 100%; height: 100%; display: block; }
 section.picker .socialNetwork ul li#save p { display: none; }
 
 section.picker .socialNetwork ul li#save .icon { width: 100%; height: 100%; display: block; background: url('../images/navigation/menuicon2.png') no-repeat center center; background-size: 20%; }
@@ -57,11 +62,18 @@ section.picker .running_total p.runningCost {
 section.picker nav ul.choose li button {
 	-webkit-appearance: none;
 	height: 50px;
-	background: #000;
 	text-align: right;
 	padding: 0 20%;
 	border: none;
 	color: #FFF;
+}
+section.picker nav ul.choose li.left button {
+	background: url('../images/navigation/arrowleft.png') no-repeat center center;
+	background-size: 70%;
+}
+section.picker nav ul.choose li.right button {
+	background: url('../images/navigation/arrowright.png') no-repeat center center;
+	background-size: 70%;
 }
 
 @media only screen and (max-width: 767px) {
@@ -74,12 +86,25 @@ section.picker nav ul.choose li button {
 	section.picker .socialNetwork  { display: block; }
 	
 	section.picker .socialNetwork ul li p { display: none; }
+	
+	#content section.preview.colour { display: block; width: 90%; margin-left: 5%;}
+	#content section.preview.colour .running_total,
+	#content section.preview.colour .socialNetwork { display: none; }
+	
+	section.picker.colour nav.items { height: auto !important; }
+
 }
 
 @media only screen and (max-width: 767px) and (orientation: landscape) {
 	section.picker .socialNetwork ul li#save .icon { background-size: 10%; }
 	section.picker .socialNetwork ul li#dealerLocator .icon { background-size: 10%; }
 	section.picker .socialNetwork ul li#share .icon { background-size: 15%; }
+	
+	section.preview.colour { display: block; }
+	
+	#content section.preview.colour { display: block; }
+	
+	section.picker.colour nav.items { height: auto !important; }
 }
 
 @media only screen and (max-width: 1024px) {
