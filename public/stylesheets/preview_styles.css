@@ -6,6 +6,7 @@
 	
 	#content .preview { width: 60%; height: auto; display:inline-block; vertical-align:top;}
 	
+	#content .picker .choose nav { overflow-y: hidden; overflow-x:hidden;}
 	#content .picker .items .menu_left .item img { width: 100%; }
 	
 	#content .preview .image img { width: 90%; margin-left: 5%;}
