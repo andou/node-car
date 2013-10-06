@@ -186,8 +186,8 @@ header.navigation.mobile #center-content {width: 40%; background: url('../images
 header.navigation.mobile #right-activator {background: url('../images/navigation/menuicon2.png') no-repeat center center; width: 20%; border-left: 1px solid #808080;}
 header.navigation.mobile .slide-content { width: 50%; }
 
-nav.slide-content.left ul.main_navigation { margin-top: 40px; }
-nav.slide-content.left ul.main_navigation li { text-transform: capitalize; font-size: 0.9em;}
+nav.slide-content ul.main_navigation { margin-top: 40px; }
+nav.slide-content ul.main_navigation li { text-transform: capitalize; font-size: 0.9em;}
 
 #content { background: #FFF; }
 

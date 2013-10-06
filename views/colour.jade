@@ -24,7 +24,7 @@ block navigation
 			div.content
 
 block picker
-	section.picker
+	section.picker.preview
 		nav
 			ul.choose
 				li.left	
@@ -35,10 +35,7 @@ block picker
 				li
 					p choose package
 				li.right
-					form(action='/colour',method='get')
-						input(type="hidden", name="model", value="#{model.id}")
-						input(type="hidden", name="package")#itemID
-						button(type="submit") >
+
 		div.running_total
 			p.runningCost Price &pound; 
 				div.cost #{running_total}						
@@ -52,7 +49,7 @@ block picker
 					input(type="hidden", name="runningCost", value="#{(model.baseCost + package.accumilativeCost + item.accumilativeCost)}")
 				- })
 block preview
-	section.preview
+	section.preview.colour
 		div.image
 			img(src="#{all_models[model.id - 1].mainImage}")
 
