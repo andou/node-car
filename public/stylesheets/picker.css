@@ -1,8 +1,8 @@
-section.picker nav {width: 100%; }
+section.picker nav {width: 100%; height: 60px;}
 section.picker nav ul.choose {width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242;}
 section.picker nav ul.choose li.left {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
 
-section.picker {width: 35%; float: left; }
+section.picker {width: 35%; float: left;}
 section.picker nav {width: 100%; height: 100%; overflow:hidden; overflow-y:scroll;}
 section.picker nav ul.choose { width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242; height: 60px;}
 section.picker nav ul.choose li.left {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
@@ -11,13 +11,14 @@ section.picker nav ul.choose li {width: 70%; height: 100%; display: block; float
 section.picker nav ul.choose li p {text-transform: uppercase;}
 section.picker nav ul.choose li.right {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
 
-section.picker nav.items {height: 400px; overflow: hidden; overflow-y: scroll;}
+section.picker nav.items {height: 400px;}
 section.picker nav ul.menu_left {width: 100%; height: 100%; display: block; float: left; text-align: center;  color: #424242;}
 section.picker nav ul.menu_left li p { background: #9F2C2E; padding: 1% 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2); color: #FFF; text-transform: capitalize;}
 
 section.picker nav ul.menu_left img { width: 90%; height: auto; }
 
-section.preview { width: 60%; float: left; height: 60%; margin-left: 2.5%;}
+section.preview { width: 60%; float: left; height: 60%; margin-left: 2.5%; margin-top: 5%;}
+section.preview .image  { padding-bottom: 5%; }
 
 section.preview .running_total,
 section.picker .running_total { background: #333; color: #FFF; padding: 2%; text-align: left;}
@@ -87,14 +88,15 @@ section.picker nav ul.choose li.right button {
 	
 	section.picker .socialNetwork ul li p { display: none; }
 	
-	#content section.preview.colour { display: block; width: 90%; margin-left: 5%;}
+	#content section.preview.colour { display: block; width: 90%; margin-left: 5%; margin-top: 10px;}
 	#content section.preview.colour .running_total { display: none; }
 	
-	#content section.preview.colour .socialNetwork { background: #333; position: fixed; bottom: 0; height: 40px; left: 0;}
+	#content section.preview.colour .socialNetwork { background: #333; position: fixed; bottom: 40px; height: 40px; left: 0;}
 	#content section.preview.colour .socialNetwork li div { display: none; }
 	#content section.preview.colour .socialNetwork li div.icon { display: block; width: 100%; float: left; margin: 0; height: 100%; background-size: 20%;}
 	
 	section.picker.colour nav.items { height: auto !important; }
+	
 
 }
 
@@ -108,11 +110,6 @@ section.picker nav ul.choose li.right button {
 	#content section.preview.colour { display: block; }
 	
 	section.picker.colour nav.items { height: auto !important; }
-	
-	#content section.preview.colour .socialNetwork { background: #333; position: fixed; bottom: 0; height: 40px; left: 0;}
-	#content section.preview.colour .socialNetwork li div { display: none; }
-	#content section.preview.colour .socialNetwork li div.icon { display: block; width: 100%; float: left; margin: 0; height: 100%; background-size: 20%;}
-	
 }
 
 @media only screen and (max-width: 1024px) {
