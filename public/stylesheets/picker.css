@@ -88,8 +88,11 @@ section.picker nav ul.choose li.right button {
 	section.picker .socialNetwork ul li p { display: none; }
 	
 	#content section.preview.colour { display: block; width: 90%; margin-left: 5%;}
-	#content section.preview.colour .running_total,
-	#content section.preview.colour .socialNetwork { display: none; }
+	#content section.preview.colour .running_total { display: none; }
+	
+	#content section.preview.colour .socialNetwork { background: #333; position: fixed; bottom: 0; height: 40px; left: 0;}
+	#content section.preview.colour .socialNetwork li div { display: none; }
+	#content section.preview.colour .socialNetwork li div.icon { display: block; width: 100%; float: left; margin: 0; height: 100%; background-size: 20%;}
 	
 	section.picker.colour nav.items { height: auto !important; }
 
@@ -105,6 +108,11 @@ section.picker nav ul.choose li.right button {
 	#content section.preview.colour { display: block; }
 	
 	section.picker.colour nav.items { height: auto !important; }
+	
+	#content section.preview.colour .socialNetwork { background: #333; position: fixed; bottom: 0; height: 40px; left: 0;}
+	#content section.preview.colour .socialNetwork li div { display: none; }
+	#content section.preview.colour .socialNetwork li div.icon { display: block; width: 100%; float: left; margin: 0; height: 100%; background-size: 20%;}
+	
 }
 
 @media only screen and (max-width: 1024px) {
