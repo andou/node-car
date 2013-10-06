@@ -1,6 +1,8 @@
 (function ($) {
-	$(".picker .items").height(($(window).innerHeight() - 150) + 'px');
-	
+	resize();
+	window.onresize = function(event) {
+		resize();
+	}
 	$("#content .picker .items .menu_left .item").bind('click touchend', function(){
 		$("#itemID").val($(this).find('input[name="id"]').val());
 
@@ -15,3 +17,8 @@
 		}
 	});
 }($));
+
+function resize(){
+	
+	$(".picker .items").height(($(window).innerHeight() - 150) + 'px');
+}
