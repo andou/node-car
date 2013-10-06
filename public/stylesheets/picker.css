@@ -13,7 +13,7 @@ section.picker nav ul.choose li.right {width: 15%; height: 100%; display: block;
 
 section.picker nav.items {height: 400px;}
 section.picker nav ul.menu_left {width: 100%; height: 100%; display: block; float: left; text-align: center;  color: #424242;}
-section.picker nav ul.menu_left li p { background: #9F2C2E; padding: 1% 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2); color: #FFF;}
+section.picker nav ul.menu_left li p { background: #9F2C2E; padding: 1% 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2); color: #FFF; text-transform: capitalize;}
 
 section.picker nav ul.menu_left img { width: 90%; height: auto; }
 
@@ -23,6 +23,29 @@ section.preview .running_total,
 section.picker .running_total { background: #333; color: #FFF; padding: 2%; text-align: left;}
 
 section.picker .running_total { display: none; }
+
+section.preview .socialNetwork { height: 50px; background: #9F2C2E; line-height: 50px; color: #FFF; width: 100%; text-transform: uppercase;}
+section.preview .socialNetwork ul {height: 100%; display: block;}
+section.preview .socialNetwork ul li {width: 33.33%; float: left; border-right: 1px solid #FFF; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; padding: 0 1%;}
+section.preview .socialNetwork ul li:last-child { border-right: none; }
+
+section.picker .socialNetwork { display: none; height: 40px; bottom: 0; position: fixed; background: #333; width: 100%; }
+section.picker .socialNetwork ul { height: 100%; display: block;}
+section.picker .socialNetwork ul li { width: 33.33%; float: left; border-right: 1px solid #808080; height: 100%; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;}
+section.picker .socialNetwork ul li:last-child { border-right: none; }
+
+section.picker .socialNetwork ul li#save .icon { width: 100%; height: 100%; display: block; background: red; }
+section.picker .socialNetwork ul li#save p { display: none; }
+
+section.picker .socialNetwork ul li#save .icon { width: 100%; height: 100%; display: block; background: url('../images/navigation/menuicon2.png') no-repeat center center; background-size: 20%; }
+section.picker .socialNetwork ul li#save p { display: none; }
+
+section.picker .socialNetwork ul li#dealerLocator .icon { width: 100%; height: 100%; display: block; background: url('../images/social/dealericon.png') no-repeat center center; background-size: 15%; }
+section.picker .socialNetwork ul li#dealerLocator p { display: none; }
+
+section.picker .socialNetwork ul li#share .icon { width: 100%; height: 100%; display: block; background: url('../images/social/shareicon.png') no-repeat center center; background-size: 25%; }
+section.picker .socialNetwork ul li#share p { display: none; }
+
 
 section.preview .running_total p.runningCost,
 section.picker .running_total p.runningCost {
@@ -47,6 +70,16 @@ section.picker nav ul.choose li button {
 	#content .preview { display: none; }
 	
 	section.picker .running_total { display: block; }
+	
+	section.picker .socialNetwork  { display: block; }
+	
+	section.picker .socialNetwork ul li p { display: none; }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+	section.picker .socialNetwork ul li#save .icon { background-size: 10%; }
+	section.picker .socialNetwork ul li#dealerLocator .icon { background-size: 10%; }
+	section.picker .socialNetwork ul li#share .icon { background-size: 15%; }
 }
 
 @media only screen and (max-width: 1024px) {

@@ -51,6 +51,18 @@ block picker
 					input(type="hidden", name="id", value="#{item.id}")
 					input(type="hidden", name="runningCost", value="#{(model.baseCost + package.accumilativeCost + item.accumilativeCost)}")
 				- })
+				
+		div.socialNetwork
+			ul
+				li#save
+					div.icon
+					div Save
+				li#dealerLocator
+					div.icon
+					div Dealer Locator
+				li#share
+					div.icon
+					div Share
 block preview
 	section.preview
 		div.image
