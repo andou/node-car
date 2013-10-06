@@ -15,6 +15,10 @@ section.picker nav.items {height: 400px;}
 section.picker nav ul.menu_left {width: 100%; height: 100%; display: block; float: left; text-align: center;  color: #424242;}
 section.picker nav ul.menu_left li p { background: #9F2C2E; padding: 1% 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2); color: #FFF; text-transform: capitalize;}
 
+section.picker nav ul.menu_left li.colour { margin-top: 2px;}
+section.picker nav ul.menu_left li.colour .icon { height: 31px; width: 15%; display:inline-block; vertical-align:top; }
+section.picker nav ul.menu_left li.colour p { vertical-align:top; background: #9F2C2E; padding: 0; border-bottom: 1px solid rgba(0, 0, 0, 0.2); color: #FFF; text-transform: capitalize; width: 84%; display:inline-block; height: 30px;}
+
 section.picker nav ul.menu_left img { width: 90%; height: auto; }
 
 section.preview { width: 60%; float: left; height: 60%; margin-left: 2.5%; margin-top: 5%;}
