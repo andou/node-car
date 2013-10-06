@@ -26,15 +26,18 @@ block picker
 		nav
 			ul.choose
 				li.left
+
 				li
 					p choose package
 				li.right
 					form(action='/package',method='get')#modelForm
 						input(type="hidden", name="model", value="#{all_models[model_id -1].id}")#itemID
 						button(type="submit") >
+
 		div.running_total
 			p.runningCost Price &pound; 
 				div.cost #{running_total}
+
 		nav.items
 			ul.menu_left
 				- all_models.forEach(function(item,index) {
@@ -54,3 +57,4 @@ block preview
 		div.running_total
 			p.runningCost Price &pound; 
 				div.cost #{running_total}
+				

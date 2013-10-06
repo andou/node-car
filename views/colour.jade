@@ -19,6 +19,9 @@ block navigation
 				a(href="#") configure
 			li
 				a(href="#") contact
+				
+		div.basket
+
 block picker
 	section.picker
 		nav
@@ -51,7 +54,7 @@ block preview
 	section.preview
 		div.image
 			img(src="#{all_models[model.id - 1].mainImage}")
-			
+
 		div.running_total
 			p.runningCost Price &pound; 
 				div.cost #{running_total}
