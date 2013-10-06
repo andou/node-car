@@ -1,9 +1,8 @@
-section.picker { width: 30%; float: left; }
 section.picker nav {width: 100%; height: 60px;}
 section.picker nav ul.choose {width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242;}
 section.picker nav ul.choose li.left {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
 
-section.picker {width: 35%; height: 60px;}
+section.picker {width: 35%; height: 60px; float: left;}
 section.picker nav {width: 100%; height: 100%; overflow:hidden; overflow-y:scroll;}
 section.picker nav ul.choose { width: 100%; height: 100%; display: block; float: left; text-align: center;  background: #E5E5E5; color: #424242;}
 section.picker nav ul.choose li.left {width: 15%; height: 100%; display: block; float: left; line-height: 55px;}
@@ -18,7 +17,7 @@ section.picker nav ul.menu_left li p { background: #9F2C2E; padding: 1% 0; borde
 
 section.picker nav ul.menu_left img { width: 90%; height: auto; }
 
-section.preview { width: 60%; float: left; height: 60%; margin-left: 5%; ;}
+section.preview { width: 60%; float: left; height: 60%; margin-left: 2.5%;}
 
 section.preview .running_total,
 section.picker .running_total { background: #333; color: #FFF; padding: 2%; text-align: left;}
@@ -39,6 +38,7 @@ section.picker nav ul.choose li button {
 	text-align: right;
 	padding: 0 20%;
 	border: none;
+	color: #FFF;
 }
 
 @media only screen and (max-width: 767px) {
